@@ -24,8 +24,9 @@ main {
 
 main h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 main .social-media {
@@ -39,12 +40,38 @@ main .social-media a{
 }
 
 main .social-media img {
-    width: 36px;
+    width: 30px;
     margin-left: 2rem;
 }
 
 main .social-media a:first-child img{
     margin-left: 0;
+}
+
+main .alternative {
+    margin-bottom: rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    color: rgb(244, 105, 4);
+    font-weight: bold;
+    position: relative  ;
+
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 120px;
+    bottom: 50%;
+    right: 50px;
+    background: rgb(244, 105, 4);
+}
+
+main .alternative span::after {
+    left: 50px;
 }
 
 main form{
@@ -67,10 +94,10 @@ main form label span {
 
 main form input {
     background-color: #1c2235 ;
-    width: 400px;
+    width: 300px;
     height: 30px;
     padding: 0 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     outline: none;
     color: azure;
     font-size: 1rem;
@@ -80,9 +107,9 @@ main form input {
 
 main form input[type="submit"] {
     cursor: pointer;
-    width: 100px;
-    height: 50px;
-    margin-top: 4rem;
+    width: 80px;
+    height: 40px;
+    margin-top: 1rem;
     border: none;
     border-radius: 32px;
     background: rgb(244, 105, 4);
